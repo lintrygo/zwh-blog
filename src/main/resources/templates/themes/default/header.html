@@ -16,20 +16,24 @@
     <link th:href="@{/user/css/style.min.css}" rel="stylesheet"/>
     <script th:src="@{//cdn.bootcss.com/jquery/2.2.3/jquery.min.js}"></script>
 
-    <!--&lt;!&ndash;[if lt IE 9]>-->
-    <!--<script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>-->
-    <!--<script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>-->
-    <!--<![endif]&ndash;&gt;-->
+    <link rel="stylesheet" th:href="@{/user/css/bootstrap.min.css}"/>
+    <script th:src="@{/user/js/bootstrap.min.js}"></script>
 
-    <!--&lt;!&ndash;[if lt IE 9]><script src="js/html5.js"></script><![endif]&ndash;&gt;-->
-    <!--<script th:src="@{/user/carousel/js/jquery-1.8.3.min.js}"></script>-->
-    <!--<script th:src="@{/user/carousel/js/jquery.tiles.js}"></script>-->
 
-    <!--<link rel="stylesheet" th:href="@{/user/carousel/css/normalize.css}"/>-->
-    <!--<link rel="stylesheet" th:href="@{/user/carousel/css/styles.css}" media="screen"/>-->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
-    <!--&lt;!&ndash;必要样式表&ndash;&gt;-->
-    <!--<link rel="stylesheet" th:href="@{/user/carousel/css/jquery.tiles.min.css}"/>-->
+    <!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+
+    <script th:src="@{/user/carousel/js/jquery.tiles.js}"></script>
+
+    <link rel="stylesheet" th:href="@{/user/carousel/css/normalize.css}"/>
+    <link rel="stylesheet" th:href="@{/user/carousel/css/styles.css}" media="screen"/>
+
+    <!--必要样式表-->
+    <link rel="stylesheet" th:href="@{/user/carousel/css/jquery.tiles.min.css}"/>
 </head>
 <body  gtools_scp_screen_capture_injected="true" th:class="${is_post}?'':'bg-grey'">
 <!--[if lt IE 8]>
@@ -39,7 +43,7 @@
 <![endif]-->
 <header id="header" class="header bg-white">
     <div class="navbar-container">
-        <a th:href="${commons.site_url('')}" class="navbar-logo">
+        <a th:href="${commons.site_url('/')}" class="navbar-logo">
             <img th:src="@{/user/img/logo.png}" alt="首页"/>
         </a>
         <div class="navbar-menu">
