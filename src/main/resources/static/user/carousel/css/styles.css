@@ -1,4 +1,7 @@
-body { width: 960px; margin: 0 auto; overflow-y: scroll; background-color: rgba(29,29,29,1.00); }
+/*body { width: 960px; margin: 0 auto; overflow-y: scroll; background-color: rgba(29,29,29,1.00); }*/
+.car{
+  width: 1200px; margin: 0 auto; background-color: rgba(29,29,29,1.00);
+}
 header {
   margin-top: 40px;
 }

@@ -4,42 +4,42 @@
 <body>
 
 
-<!--<div class="title">-->
-    <!--<label>Effect:</label>-->
-    <!--<select id="effects-select">-->
-        <!--<option value="default">default</option>-->
-        <!--<option value="simple">simple</option>-->
-        <!--<option value="left">left</option>-->
-        <!--<option value="up">up</option>-->
-        <!--<option value="leftright">leftright</option>-->
-        <!--<option value="updown">updown</option>-->
-        <!--<option value="switchlr">switchlr</option>-->
-        <!--<option value="switchud">switchud</option>-->
-        <!--<option value="fliplr">fliplr</option>-->
-        <!--<option value="flipud">flipud</option>-->
-        <!--<option value="reduce">reduce</option>-->
-        <!--<option value="360">360</option>-->
-    <!--</select>-->
-    <!--<div class="code">-->
-        <!--<code>x: 6</code>-->
-        <!--<code>y: 4</code>-->
-        <!--<code>random: true</code>-->
-    <!--</div>-->
-    <!--<button type="button" class="start action">Play</button>-->
-    <!--<button type="button" class="stop action">Stop</button>-->
-<!--</div>-->
+<div class="title">
+    <label>Effect:</label>
+    <select id="effects-select">
+        <option value="default">default</option>
+        <option value="simple">simple</option>
+        <option value="left">left</option>
+        <option value="up">up</option>
+        <option value="leftright">leftright</option>
+        <option value="updown">updown</option>
+        <option value="switchlr">switchlr</option>
+        <option value="switchud">switchud</option>
+        <option value="fliplr">fliplr</option>
+        <option value="flipud">flipud</option>
+        <option value="reduce">reduce</option>
+        <option value="360">360</option>
+    </select>
+    <div class="code">
+        <code>x: 6</code>
+        <code>y: 4</code>
+        <code>random: true</code>
+    </div>
+    <button type="button" class="start action">Play</button>
+    <button type="button" class="stop action">Stop</button>
+</div>
 
-<!--<div class="slider-wrap" style="margin-top: 50px">-->
-    <!--<div class="slider">-->
-        <!--<p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>-->
-        <!--<img th:src="@{/user/carousel/img/01.jpg}"/><p><strong>Sausage:</strong> ground round sirloin ball tip beef ribs.</p>-->
-        <!--<img th:src="@{/user/carousel/img/02.jpg}"/><p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>-->
-        <!--<img th:src="@{/user/carousel/img/03.jpg}"/><p><strong>Pork turkey:</strong> shoulder, filet mignon chuck t-bone bacon.</p>-->
-        <!--<img th:src="@{/user/carousel/img/04.jpg}"/><p><strong>Short loin:</strong> pig jowl fatback, pork loin pork chop.</p>-->
-        <!--<img th:src="@{/user/carousel/img/05.jpg}"/><p><strong>Sausage:</strong> ground round sirloin ball tip beef ribs.</p>-->
-        <!--<img th:src="@{/user/carousel/img/06.jpg}"/><p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>-->
-    <!--</div>-->
-<!--</div>-->
+<div class="car slider-wrap" style="margin-top: 30px">
+    <div class="slider">
+        <p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>
+        <img th:src="@{/user/carousel/img/01.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+        <img th:src="@{/user/carousel/img/02.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+        <img th:src="@{/user/carousel/img/03.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+        <img th:src="@{/user/carousel/img/04.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+        <img th:src="@{/user/carousel/img/05.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+        <img th:src="@{/user/carousel/img/06.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
+    </div>
+</div>
 
 <script type="text/javascript">
     var $slider = $('.slider-wrap');
@@ -111,7 +111,16 @@
 
 <div class="main-content index-page clearfix">
     <div class="post-lists">
-        <div class="post-lists-body">
+        <div class="col-md-12">
+        <div class="panel group-topic-list no-border">
+            <div class="panel-heading" style="padding:15px 15px;">
+                我的博文
+                <span class="pull-right" >
+                            <a class="btn btn-primary m-t-n4" href="">查看更多</a>
+                        </span>
+            </div>
+        </div>
+        <div class="panel-body " style="padding:0px;">
             <div class="post-list-item" th:each="article: ${articles.list}">
                 <div class="post-list-item-container">
                     <a th:href="${commons.permalink(article)}" class="item-thumb  bg-deepgrey"
@@ -133,6 +142,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <div class="lists-navigator clearfix">
