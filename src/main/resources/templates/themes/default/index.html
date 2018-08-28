@@ -5,33 +5,11 @@
 
 
 <div class="title">
-    <label>Effect:</label>
-    <select id="effects-select">
-        <option value="default">default</option>
-        <option value="simple">simple</option>
-        <option value="left">left</option>
-        <option value="up">up</option>
-        <option value="leftright">leftright</option>
-        <option value="updown">updown</option>
-        <option value="switchlr">switchlr</option>
-        <option value="switchud">switchud</option>
-        <option value="fliplr">fliplr</option>
-        <option value="flipud">flipud</option>
-        <option value="reduce">reduce</option>
-        <option value="360">360</option>
-    </select>
-    <div class="code">
-        <code>x: 6</code>
-        <code>y: 4</code>
-        <code>random: true</code>
-    </div>
-    <button type="button" class="start action">Play</button>
-    <button type="button" class="stop action">Stop</button>
+
 </div>
 
 <div class="car slider-wrap" style="margin-top: 30px">
     <div class="slider">
-        <p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>
         <img th:src="@{/user/carousel/img/01.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
         <img th:src="@{/user/carousel/img/02.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
         <img th:src="@{/user/carousel/img/03.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
@@ -113,11 +91,11 @@
     <div class="post-lists">
         <div class="col-md-12">
         <div class="panel group-topic-list no-border">
-            <div class="panel-heading" style="padding:15px 15px;">
+            <div class="panel-heading"  style="padding:15px 15px;">
                 我的博文
                 <span class="pull-right" >
-                            <a class="btn btn-primary m-t-n4" href="">查看更多</a>
-                        </span>
+                    <a class="btn btn-primary m-t-n4" href="">查看更多</a>
+                </span>
             </div>
         </div>
         <div class="panel-body " style="padding:0px;">
@@ -145,9 +123,65 @@
         </div>
         </div>
     </div>
-    <div class="lists-navigator clearfix">
-        <div th:replace="comm/macros::pageNav(${articles},'←','→','page')"></div>
-    </div>
+    <!--<div class="lists-navigator clearfix">-->
+        <!--<div th:replace="comm/macros::pageNav(${articles},'←','→','page')"></div>-->
+    <!--</div>-->
+
+
+    <div class="container">
+
+
+        <div class="content">
+
+            <h2>Lily</h2>
+            <div class="grid">
+                <figure class="effect-lily">
+                    <img th:src="@{/user/pictureEffect/img/12.jpg}" alt="img12"/>
+                    <figcaption>
+                        <div>
+                            <h2>Nice <span>Lily</span></h2>
+                            <p>Lily likes to play with crayons and pencils</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+                <figure class="effect-lily">
+                    <img th:src="@{/user/pictureEffect/img/12.jpg}" alt="img1"/>
+                    <figcaption>
+                        <div>
+                            <h2>Nice <span>Lily</span></h2>
+                            <p>Lily likes to play with crayons and pencils</p>
+                        </div>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-lily">
+                <img th:src="@{/user/pictureEffect/img/12.jpg}" alt="img02"/>
+                <figcaption>
+                    <h2>Holy <span>Sadie</span></h2>
+                    <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                    <a href="#">View more</a>
+                </figcaption>
+                </figure>
+
+                <figure class="effect-lily">
+                    <img th:src="@{/user/pictureEffect/img/12.jpg}" alt="img02"/>
+                    <figcaption>
+                        <h2>Holy <span>Sadie</span></h2>
+                        <p>Sadie never took her eyes off me. She had a dark soul.</p>
+                        <a href="#">View more</a>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+
+        </div>
+
+    </div><!-- /container -->
+
+
 </div>
 </body>
 <div th:replace="themes/default/footer::footer"></div>
