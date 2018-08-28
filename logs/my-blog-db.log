@@ -18623,3 +18623,616 @@ Caused by: org.xml.sax.SAXParseException: 元素类型 "link" 必须由匹配的
 2018-08-27 18:25:32.039 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] Finished process on template "themes/default/index" using mode "HTML5"
 2018-08-27 18:25:32.041 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] FINISHED PROCESS AND OUTPUT OF TEMPLATE "themes/default/index" WITH LOCALE zh_CN
 2018-08-27 18:25:32.041 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-10][themes/default/index][zh_CN][22854942][23] TEMPLATE "themes/default/index" WITH LOCALE zh_CN PROCESSED IN 22854942 nanoseconds (approx. 23ms)
+2018-08-28 08:18:38.894 [http-nio-8081-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:18:38.914 [http-nio-8081-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:18:38.919 [http-nio-8081-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:18:38.919 [http-nio-8081-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/login, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:18:40.195 [http-nio-8081-exec-8] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AuthController.login,ARGS : []
+2018-08-28 08:18:40.222 [http-nio-8081-exec-8] INFO  javax.sql.DataSource - RESPONSE : admin/login
+2018-08-28 08:18:40.228 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] STARTING PROCESS OF TEMPLATE "admin/login" WITH LOCALE zh_CN
+2018-08-28 08:18:40.253 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/login" was correctly resolved as resource "classpath:/templates/admin/login.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:40.256 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] Starting process on template "admin/login" using mode "HTML5"
+2018-08-28 08:18:40.318 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] Finished process on template "admin/login" using mode "HTML5"
+2018-08-28 08:18:40.320 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/login" WITH LOCALE zh_CN
+2018-08-28 08:18:40.320 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-8][admin/login][zh_CN][92322121][92] TEMPLATE "admin/login" WITH LOCALE zh_CN PROCESSED IN 92322121 nanoseconds (approx. 92ms)
+2018-08-28 08:18:45.758 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:18:45.758 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/login, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:18:45.883 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/login,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AuthController.doLogin,ARGS : [admin, 123456, null, org.apache.catalina.connector.RequestFacade@128a460, org.springframework.boot.web.support.ErrorPageFilter$ErrorWrapperResponse@2507cc]
+2018-08-28 08:18:45.892 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:18:45.892 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:45.952 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:18:45.952 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==>  Preparing: select count(*) from t_users WHERE ( username = ? ) 
+2018-08-28 08:18:45.952 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==>  Preparing: select count(*) from t_users WHERE ( username = ? ) 
+2018-08-28 08:18:45.953 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==> Parameters: admin(String)
+2018-08-28 08:18:45.953 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - ==> Parameters: admin(String)
+2018-08-28 08:18:46.155 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.155 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.156 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.169 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5] from current transaction
+2018-08-28 08:18:46.171 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==>  Preparing: select uid, username, password, email, home_url, screen_name, created, activated, logged, group_name from t_users WHERE ( username = ? and password = ? ) 
+2018-08-28 08:18:46.171 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==>  Preparing: select uid, username, password, email, home_url, screen_name, created, activated, logged, group_name from t_users WHERE ( username = ? and password = ? ) 
+2018-08-28 08:18:46.171 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==> Parameters: admin(String), a66abb5684c45962d887564f08346e8d(String)
+2018-08-28 08:18:46.171 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - ==> Parameters: admin(String), a66abb5684c45962d887564f08346e8d(String)
+2018-08-28 08:18:46.185 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - <==      Total: 1
+2018-08-28 08:18:46.185 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.UserVoMapper.selectByExample - <==      Total: 1
+2018-08-28 08:18:46.185 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.202 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5] from current transaction
+2018-08-28 08:18:46.202 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2018-08-28 08:18:46.202 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==>  Preparing: insert into t_logs (id, action, data, author_id, ip, created ) values (?, ?, ?, ?, ?, ? ) 
+2018-08-28 08:18:46.204 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 1(Integer), 0:0:0:0:0:0:0:1(String), 1535415526(Integer)
+2018-08-28 08:18:46.204 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - ==> Parameters: null, 登录后台(String), null, 1(Integer), 0:0:0:0:0:0:0:1(String), 1535415526(Integer)
+2018-08-28 08:18:46.360 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2018-08-28 08:18:46.360 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.LogVoMapper.insert - <==    Updates: 1
+2018-08-28 08:18:46.361 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.361 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - RESPONSE : com.my.blog.website.modal.Bo.RestResponseBo@10afb2f
+2018-08-28 08:18:46.362 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.362 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.362 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c5da5]
+2018-08-28 08:18:46.545 [http-nio-8081-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:18:46.545 [http-nio-8081-exec-1] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/index, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:18:46.550 [http-nio-8081-exec-1] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/index,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.IndexController.index,ARGS : [org.apache.catalina.connector.RequestFacade@128a460]
+2018-08-28 08:18:46.581 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:18:46.581 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.623 [http-nio-8081-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.9428571428571428
+2018-08-28 08:18:46.625 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:18:46.625 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2018-08-28 08:18:46.625 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments 
+2018-08-28 08:18:46.625 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2018-08-28 08:18:46.625 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 
+2018-08-28 08:18:46.670 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:18:46.670 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:18:46.671 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT 5 
+2018-08-28 08:18:46.671 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments order by created desc LIMIT 5 
+2018-08-28 08:18:46.671 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 
+2018-08-28 08:18:46.671 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 
+2018-08-28 08:18:46.764 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:18:46.764 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:18:46.765 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.765 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.766 [http-nio-8081-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.9166666666666666
+2018-08-28 08:18:46.769 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2018-08-28 08:18:46.769 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (status = ? AND type = ?) 
+2018-08-28 08:18:46.770 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2018-08-28 08:18:46.770 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - ==> Parameters: publish(String), post(String)
+2018-08-28 08:18:46.779 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:18:46.779 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:18:46.779 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT 5 
+2018-08-28 08:18:46.779 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed from t_contents WHERE ( status = ? and type = ? ) order by created desc LIMIT 5 
+2018-08-28 08:18:46.780 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String)
+2018-08-28 08:18:46.780 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - ==> Parameters: publish(String), post(String)
+2018-08-28 08:18:46.796 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:18:46.796 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:18:46.796 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.796 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.798 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2018-08-28 08:18:46.798 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==>  Preparing: select count(*) from t_contents WHERE ( type = ? and status = ? ) 
+2018-08-28 08:18:46.799 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2018-08-28 08:18:46.799 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - ==> Parameters: post(String), publish(String)
+2018-08-28 08:18:46.800 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.800 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.ContentVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.800 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.800 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.801 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2018-08-28 08:18:46.801 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==>  Preparing: select count(*) from t_comments 
+2018-08-28 08:18:46.801 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2018-08-28 08:18:46.801 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - ==> Parameters: 
+2018-08-28 08:18:46.802 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.802 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.CommentVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.802 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.802 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.825 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2018-08-28 08:18:46.825 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==>  Preparing: select count(*) from t_attach 
+2018-08-28 08:18:46.826 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2018-08-28 08:18:46.826 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - ==> Parameters: 
+2018-08-28 08:18:46.863 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.863 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.AttachVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.863 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.867 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.871 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2018-08-28 08:18:46.871 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==>  Preparing: select count(*) from t_metas WHERE ( type = ? ) 
+2018-08-28 08:18:46.872 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2018-08-28 08:18:46.872 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - ==> Parameters: link(String)
+2018-08-28 08:18:46.877 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.877 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.MetaVoMapper.countByExample - <==      Total: 1
+2018-08-28 08:18:46.878 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.878 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Fetched SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48] from current transaction
+2018-08-28 08:18:46.905 [http-nio-8081-exec-1] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.8918918918918919
+2018-08-28 08:18:46.907 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2018-08-28 08:18:46.907 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_logs 
+2018-08-28 08:18:46.907 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:18:46.907 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:18:46.920 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:18:46.920 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:18:46.921 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT 5 
+2018-08-28 08:18:46.921 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==>  Preparing: select id, action, data, author_id, ip, created from t_logs order by id desc LIMIT 5 
+2018-08-28 08:18:46.921 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:18:46.921 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:18:46.923 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:18:46.923 [http-nio-8081-exec-1] DEBUG com.my.blog.website.dao.LogVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:18:46.923 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.924 [http-nio-8081-exec-1] INFO  javax.sql.DataSource - RESPONSE : admin/index
+2018-08-28 08:18:46.924 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.924 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.924 [http-nio-8081-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1043f48]
+2018-08-28 08:18:46.930 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-1] STARTING PROCESS OF TEMPLATE "admin/index" WITH LOCALE zh_CN
+2018-08-28 08:18:46.961 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-1] Template "admin/index" was correctly resolved as resource "classpath:/templates/admin/index.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:46.969 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-1] Starting process on template "admin/index" using mode "HTML5"
+2018-08-28 08:18:47.006 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-1] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:47.043 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-1] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:47.448 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-1] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:47.451 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-1] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:47.455 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-1] Finished process on template "admin/index" using mode "HTML5"
+2018-08-28 08:18:47.460 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-1] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/index" WITH LOCALE zh_CN
+2018-08-28 08:18:47.460 [http-nio-8081-exec-1] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-1][admin/index][zh_CN][529779515][530] TEMPLATE "admin/index" WITH LOCALE zh_CN PROCESSED IN 529779515 nanoseconds (approx. 530ms)
+2018-08-28 08:18:51.415 [http-nio-8081-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:18:51.416 [http-nio-8081-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /article/5, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:18:51.480 [http-nio-8081-exec-5] INFO  javax.sql.DataSource - URL : http://localhost:8081/article/5,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.IndexController.getArticle,ARGS : [org.apache.catalina.connector.RequestFacade@a19374, 5]
+2018-08-28 08:18:51.484 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:18:51.484 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19622b0] was not registered for synchronization because synchronization is not active
+2018-08-28 08:18:51.492 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:18:51.493 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents where cid = ? 
+2018-08-28 08:18:51.493 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents where cid = ? 
+2018-08-28 08:18:51.493 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - ==> Parameters: 5(Integer)
+2018-08-28 08:18:51.493 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - ==> Parameters: 5(Integer)
+2018-08-28 08:18:51.551 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - <==      Total: 1
+2018-08-28 08:18:51.551 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByPrimaryKey - <==      Total: 1
+2018-08-28 08:18:51.551 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19622b0]
+2018-08-28 08:18:51.551 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:18:51.552 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13a5d1f] was not registered for synchronization because synchronization is not active
+2018-08-28 08:18:51.552 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:18:51.552 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - ==>  Preparing: update t_contents set title = ?, slug = ?, created = ?, modified = ?, author_id = ?, type = ?, status = ?, tags = ?, categories = ?, hits = ?, comments_num = ?, allow_comment = ?, allow_ping = ?, allow_feed = ? where cid = ? 
+2018-08-28 08:18:51.552 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - ==>  Preparing: update t_contents set title = ?, slug = ?, created = ?, modified = ?, author_id = ?, type = ?, status = ?, tags = ?, categories = ?, hits = ?, comments_num = ?, allow_comment = ?, allow_ping = ?, allow_feed = ? where cid = ? 
+2018-08-28 08:18:51.554 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - ==> Parameters: Pyspider框架 —— Python爬虫实战之爬取 V2EX 网站帖子(String), Pyspider-v2ex(String), 1497323771(Integer), 1497323835(Integer), 1(Integer), post(String), publish(String), Pyspider,Python,爬虫(String), Python(String), 30(Integer), 2(Integer), true(Boolean), true(Boolean), true(Boolean), 5(Integer)
+2018-08-28 08:18:51.554 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - ==> Parameters: Pyspider框架 —— Python爬虫实战之爬取 V2EX 网站帖子(String), Pyspider-v2ex(String), 1497323771(Integer), 1497323835(Integer), 1(Integer), post(String), publish(String), Pyspider,Python,爬虫(String), Python(String), 30(Integer), 2(Integer), true(Boolean), true(Boolean), true(Boolean), 5(Integer)
+2018-08-28 08:18:51.707 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - <==    Updates: 1
+2018-08-28 08:18:51.707 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.ContentVoMapper.updateByPrimaryKey - <==    Updates: 1
+2018-08-28 08:18:51.707 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@13a5d1f]
+2018-08-28 08:18:51.730 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:18:51.731 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1450261] was not registered for synchronization because synchronization is not active
+2018-08-28 08:18:51.734 [http-nio-8081-exec-5] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.868421052631579
+2018-08-28 08:18:51.737 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:18:51.737 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (cid = ? AND parent = ?) 
+2018-08-28 08:18:51.737 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (cid = ? AND parent = ?) 
+2018-08-28 08:18:51.738 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 5(Integer), 0(Integer)
+2018-08-28 08:18:51.738 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 5(Integer), 0(Integer)
+2018-08-28 08:18:51.739 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:18:51.739 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:18:51.740 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( cid = ? and parent = ? ) order by coid desc LIMIT 6 
+2018-08-28 08:18:51.740 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( cid = ? and parent = ? ) order by coid desc LIMIT 6 
+2018-08-28 08:18:51.740 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer), 0(Integer)
+2018-08-28 08:18:51.740 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 5(Integer), 0(Integer)
+2018-08-28 08:18:51.794 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2018-08-28 08:18:51.794 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 2
+2018-08-28 08:18:51.794 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1450261]
+2018-08-28 08:18:51.796 [http-nio-8081-exec-5] INFO  javax.sql.DataSource - RESPONSE : themes/default/post
+2018-08-28 08:18:51.800 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] STARTING PROCESS OF TEMPLATE "themes/default/post" WITH LOCALE zh_CN
+2018-08-28 08:18:51.826 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "themes/default/post" was correctly resolved as resource "classpath:/templates/themes/default/post.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:51.828 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] Starting process on template "themes/default/post" using mode "HTML5"
+2018-08-28 08:18:51.830 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "themes/default/header" was correctly resolved as resource "classpath:/templates/themes/default/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:51.949 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "themes/default/comments" was correctly resolved as resource "classpath:/templates/themes/default/comments.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:52.022 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "comm/tale_comment" was correctly resolved as resource "classpath:/templates/comm/tale_comment.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:52.023 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "themes/default/footer" was correctly resolved as resource "classpath:/templates/themes/default/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:18:52.032 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] Finished process on template "themes/default/post" using mode "HTML5"
+2018-08-28 08:18:52.033 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] FINISHED PROCESS AND OUTPUT OF TEMPLATE "themes/default/post" WITH LOCALE zh_CN
+2018-08-28 08:18:52.033 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-5][themes/default/post][zh_CN][232986588][233] TEMPLATE "themes/default/post" WITH LOCALE zh_CN PROCESSED IN 232986588 nanoseconds (approx. 233ms)
+2018-08-28 08:19:06.771 [http-nio-8081-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:06.772 [http-nio-8081-exec-3] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:06.779 [http-nio-8081-exec-3] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/article,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.ArticleController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@19ac074]
+2018-08-28 08:19:06.810 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:06.810 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c524a2]
+2018-08-28 08:19:06.811 [http-nio-8081-exec-3] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.8461538461538461
+2018-08-28 08:19:06.813 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:19:06.813 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:19:06.813 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:19:06.813 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2018-08-28 08:19:06.813 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 15 
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 15 
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String)
+2018-08-28 08:19:06.815 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String)
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 5
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 5
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c524a2]
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] INFO  javax.sql.DataSource - RESPONSE : admin/article_list
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c524a2]
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c524a2]
+2018-08-28 08:19:06.873 [http-nio-8081-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c524a2]
+2018-08-28 08:19:06.879 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-3] STARTING PROCESS OF TEMPLATE "admin/article_list" WITH LOCALE zh_CN
+2018-08-28 08:19:06.909 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "admin/article_list" was correctly resolved as resource "classpath:/templates/admin/article_list.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.912 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-3] Starting process on template "admin/article_list" using mode "HTML5"
+2018-08-28 08:19:06.913 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.917 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.928 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.938 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.939 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-3] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:06.940 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-3] Finished process on template "admin/article_list" using mode "HTML5"
+2018-08-28 08:19:06.941 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-3] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/article_list" WITH LOCALE zh_CN
+2018-08-28 08:19:06.941 [http-nio-8081-exec-3] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-3][admin/article_list][zh_CN][62398332][62] TEMPLATE "admin/article_list" WITH LOCALE zh_CN PROCESSED IN 62398332 nanoseconds (approx. 62ms)
+2018-08-28 08:19:10.982 [http-nio-8081-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:10.982 [http-nio-8081-exec-10] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/page, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:10.987 [http-nio-8081-exec-10] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/page,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.PageController.index,ARGS : [org.apache.catalina.connector.RequestFacade@a19374]
+2018-08-28 08:19:11.005 [http-nio-8081-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:11.005 [http-nio-8081-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1288ca] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:11.006 [http-nio-8081-exec-10] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.825
+2018-08-28 08:19:11.008 [http-nio-8081-exec-10] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:11.008 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:19:11.008 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:19:11.009 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: page(String)
+2018-08-28 08:19:11.009 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: page(String)
+2018-08-28 08:19:11.010 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:11.010 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:11.011 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 9999 
+2018-08-28 08:19:11.011 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 9999 
+2018-08-28 08:19:11.011 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: page(String)
+2018-08-28 08:19:11.011 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: page(String)
+2018-08-28 08:19:11.035 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2018-08-28 08:19:11.035 [http-nio-8081-exec-10] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 1
+2018-08-28 08:19:11.035 [http-nio-8081-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1288ca]
+2018-08-28 08:19:11.035 [http-nio-8081-exec-10] INFO  javax.sql.DataSource - RESPONSE : admin/page_list
+2018-08-28 08:19:11.038 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] STARTING PROCESS OF TEMPLATE "admin/page_list" WITH LOCALE zh_CN
+2018-08-28 08:19:11.066 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-10] Template "admin/page_list" was correctly resolved as resource "classpath:/templates/admin/page_list.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:11.068 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] Starting process on template "admin/page_list" using mode "HTML5"
+2018-08-28 08:19:11.069 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-10] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:11.072 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-10] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:11.079 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-10] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:11.081 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-10] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:11.082 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] Finished process on template "admin/page_list" using mode "HTML5"
+2018-08-28 08:19:11.082 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-10] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/page_list" WITH LOCALE zh_CN
+2018-08-28 08:19:11.083 [http-nio-8081-exec-10] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-10][admin/page_list][zh_CN][44698976][45] TEMPLATE "admin/page_list" WITH LOCALE zh_CN PROCESSED IN 44698976 nanoseconds (approx. 45ms)
+2018-08-28 08:19:18.817 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:18.817 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/comments, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:18.822 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/comments,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CommentController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@19ac074]
+2018-08-28 08:19:18.834 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:18.835 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18a8b7b] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:18.835 [http-nio-8081-exec-4] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.8048780487804879
+2018-08-28 08:19:18.865 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:18.865 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2018-08-28 08:19:18.865 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2018-08-28 08:19:18.866 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2018-08-28 08:19:18.866 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2018-08-28 08:19:18.866 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:18.866 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:19:18.867 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT 15 
+2018-08-28 08:19:18.867 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT 15 
+2018-08-28 08:19:18.867 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer)
+2018-08-28 08:19:18.867 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer)
+2018-08-28 08:19:18.874 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:19:18.874 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:19:18.876 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@18a8b7b]
+2018-08-28 08:19:18.876 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - RESPONSE : admin/comment_list
+2018-08-28 08:19:18.879 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] STARTING PROCESS OF TEMPLATE "admin/comment_list" WITH LOCALE zh_CN
+2018-08-28 08:19:18.920 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/comment_list" was correctly resolved as resource "classpath:/templates/admin/comment_list.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.921 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Starting process on template "admin/comment_list" using mode "HTML5"
+2018-08-28 08:19:18.922 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.925 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.958 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.960 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.961 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:18.962 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Finished process on template "admin/comment_list" using mode "HTML5"
+2018-08-28 08:19:18.964 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/comment_list" WITH LOCALE zh_CN
+2018-08-28 08:19:18.964 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-4][admin/comment_list][zh_CN][85321167][85] TEMPLATE "admin/comment_list" WITH LOCALE zh_CN PROCESSED IN 85321167 nanoseconds (approx. 85ms)
+2018-08-28 08:19:20.222 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:20.223 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/category, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:20.225 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/category,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CategoryController.index,ARGS : [org.apache.catalina.connector.RequestFacade@19ac074]
+2018-08-28 08:19:20.236 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:20.237 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10d64e4] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:20.237 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:20.237 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:19:20.237 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:19:20.238 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:19:20.238 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:19:20.334 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 5
+2018-08-28 08:19:20.334 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 5
+2018-08-28 08:19:20.334 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10d64e4]
+2018-08-28 08:19:20.334 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:20.334 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1754a52] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:20.335 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:20.335 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:19:20.335 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:19:20.335 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:19:20.335 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:19:20.339 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 9
+2018-08-28 08:19:20.339 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 9
+2018-08-28 08:19:20.339 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1754a52]
+2018-08-28 08:19:20.339 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - RESPONSE : admin/category
+2018-08-28 08:19:20.343 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] STARTING PROCESS OF TEMPLATE "admin/category" WITH LOCALE zh_CN
+2018-08-28 08:19:20.375 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/category" was correctly resolved as resource "classpath:/templates/admin/category.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:20.384 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Starting process on template "admin/category" using mode "HTML5"
+2018-08-28 08:19:20.385 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:20.388 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:20.399 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:20.401 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:20.401 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Finished process on template "admin/category" using mode "HTML5"
+2018-08-28 08:19:20.404 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/category" WITH LOCALE zh_CN
+2018-08-28 08:19:20.404 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-6][admin/category][zh_CN][60925195][61] TEMPLATE "admin/category" WITH LOCALE zh_CN PROCESSED IN 60925195 nanoseconds (approx. 61ms)
+2018-08-28 08:19:38.540 [http-nio-8081-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:38.540 [http-nio-8081-exec-8] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/attach, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:38.545 [http-nio-8081-exec-8] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/attach,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AttachController.index,ARGS : [org.apache.catalina.connector.RequestFacade@a19374, 1, 12]
+2018-08-28 08:19:38.556 [http-nio-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:38.556 [http-nio-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a25fba] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:38.556 [http-nio-8081-exec-8] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.7857142857142857
+2018-08-28 08:19:38.557 [http-nio-8081-exec-8] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:38.557 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:19:38.557 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:19:38.558 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:19:38.558 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:19:38.558 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:19:38.558 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:19:38.559 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:19:38.559 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:19:38.559 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:19:38.559 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:19:38.561 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 6
+2018-08-28 08:19:38.561 [http-nio-8081-exec-8] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 6
+2018-08-28 08:19:38.561 [http-nio-8081-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1a25fba]
+2018-08-28 08:19:38.562 [http-nio-8081-exec-8] INFO  javax.sql.DataSource - RESPONSE : admin/attach
+2018-08-28 08:19:38.566 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] STARTING PROCESS OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:19:38.611 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/attach" was correctly resolved as resource "classpath:/templates/admin/attach.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.613 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] Starting process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:19:38.614 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.616 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.629 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.631 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.632 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-8] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:38.633 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] Finished process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:19:38.634 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-8] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:19:38.634 [http-nio-8081-exec-8] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-8][admin/attach][zh_CN][67681021][68] TEMPLATE "admin/attach" WITH LOCALE zh_CN PROCESSED IN 67681021 nanoseconds (approx. 68ms)
+2018-08-28 08:19:48.512 [http-nio-8081-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:48.512 [http-nio-8081-exec-7] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/attach/upload, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:48.515 [http-nio-8081-exec-7] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/attach/upload,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AttachController.upload,ARGS : [org.springframework.web.multipart.support.StandardMultipartHttpServletRequest@83b9fe, [Lorg.springframework.web.multipart.MultipartFile;@54e36d]
+2018-08-28 08:19:50.655 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:50.655 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11bba81]
+2018-08-28 08:19:50.656 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:19:50.656 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - ==>  Preparing: insert into t_attach ( fname, ftype, fkey, author_id, created ) values ( ?, ?, ?, ?, ? ) 
+2018-08-28 08:19:50.656 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - ==>  Preparing: insert into t_attach ( fname, ftype, fkey, author_id, created ) values ( ?, ?, ?, ?, ? ) 
+2018-08-28 08:19:50.657 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - ==> Parameters: Tulips.jpg(String), image(String), /upload/2018/08/ukaqea326oimfoturusut39hb2.jpg(String), 1(Integer), 1535415590(Integer)
+2018-08-28 08:19:50.657 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - ==> Parameters: Tulips.jpg(String), image(String), /upload/2018/08/ukaqea326oimfoturusut39hb2.jpg(String), 1(Integer), 1535415590(Integer)
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - <==    Updates: 1
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG com.my.blog.website.dao.AttachVoMapper.insertSelective - <==    Updates: 1
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11bba81]
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] INFO  javax.sql.DataSource - RESPONSE : com.my.blog.website.modal.Bo.RestResponseBo@47e45c
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11bba81]
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11bba81]
+2018-08-28 08:19:50.689 [http-nio-8081-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11bba81]
+2018-08-28 08:19:50.989 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:50.991 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/attach, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:50.993 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/attach,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AttachController.index,ARGS : [org.apache.catalina.connector.RequestFacade@a19374, 1, 12]
+2018-08-28 08:19:50.993 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:50.993 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b299c7] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:50.993 [http-nio-8081-exec-4] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.7906976744186046
+2018-08-28 08:19:50.994 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:50.995 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:19:50.995 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:19:50.995 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:19:50.995 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:19:50.996 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:19:50.996 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:19:50.997 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:19:50.997 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:19:50.997 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:19:50.997 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:19:51.000 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 7
+2018-08-28 08:19:51.000 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 7
+2018-08-28 08:19:51.000 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b299c7]
+2018-08-28 08:19:51.000 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - RESPONSE : admin/attach
+2018-08-28 08:19:51.002 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] STARTING PROCESS OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:19:51.002 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/attach" was correctly resolved as resource "classpath:/templates/admin/attach.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.005 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Starting process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:19:51.005 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.009 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.025 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.026 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.027 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:51.028 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Finished process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:19:51.030 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:19:51.030 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-4][admin/attach][zh_CN][28021974][28] TEMPLATE "admin/attach" WITH LOCALE zh_CN PROCESSED IN 28021974 nanoseconds (approx. 28ms)
+2018-08-28 08:19:57.606 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:19:57.606 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/links, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:19:57.609 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/links,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.LinksController.index,ARGS : [org.apache.catalina.connector.RequestFacade@1ad1125]
+2018-08-28 08:19:57.619 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:19:57.619 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b4b577] was not registered for synchronization because synchronization is not active
+2018-08-28 08:19:57.621 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:19:57.621 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2018-08-28 08:19:57.621 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2018-08-28 08:19:57.621 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2018-08-28 08:19:57.621 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: link(String)
+2018-08-28 08:19:57.624 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 2
+2018-08-28 08:19:57.624 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 2
+2018-08-28 08:19:57.624 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@b4b577]
+2018-08-28 08:19:57.625 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - RESPONSE : admin/links
+2018-08-28 08:19:57.627 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] STARTING PROCESS OF TEMPLATE "admin/links" WITH LOCALE zh_CN
+2018-08-28 08:19:57.642 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/links" was correctly resolved as resource "classpath:/templates/admin/links.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:57.655 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Starting process on template "admin/links" using mode "HTML5"
+2018-08-28 08:19:57.655 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:57.657 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:57.666 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:57.667 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:19:57.668 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Finished process on template "admin/links" using mode "HTML5"
+2018-08-28 08:19:57.734 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/links" WITH LOCALE zh_CN
+2018-08-28 08:19:57.734 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-6][admin/links][zh_CN][107321120][107] TEMPLATE "admin/links" WITH LOCALE zh_CN PROCESSED IN 107321120 nanoseconds (approx. 107ms)
+2018-08-28 08:20:00.559 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:00.559 [http-nio-8081-exec-4] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/setting, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:00.561 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/setting,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.SettingController.setting,ARGS : [org.apache.catalina.connector.RequestFacade@1ad1125]
+2018-08-28 08:20:00.572 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:00.573 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d39ec8] was not registered for synchronization because synchronization is not active
+2018-08-28 08:20:00.601 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:20:00.601 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==>  Preparing: select name, value, description from t_options 
+2018-08-28 08:20:00.601 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==>  Preparing: select name, value, description from t_options 
+2018-08-28 08:20:00.601 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:20:00.601 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:20:00.634 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - <==      Total: 9
+2018-08-28 08:20:00.634 [http-nio-8081-exec-4] DEBUG com.my.blog.website.dao.OptionVoMapper.selectByExample - <==      Total: 9
+2018-08-28 08:20:00.635 [http-nio-8081-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d39ec8]
+2018-08-28 08:20:00.636 [http-nio-8081-exec-4] INFO  javax.sql.DataSource - RESPONSE : admin/setting
+2018-08-28 08:20:00.639 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] STARTING PROCESS OF TEMPLATE "admin/setting" WITH LOCALE zh_CN
+2018-08-28 08:20:00.672 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/setting" was correctly resolved as resource "classpath:/templates/admin/setting.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:00.675 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Starting process on template "admin/setting" using mode "HTML5"
+2018-08-28 08:20:00.676 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:00.678 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:00.684 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:00.686 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-4] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:00.687 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] Finished process on template "admin/setting" using mode "HTML5"
+2018-08-28 08:20:00.688 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-4] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/setting" WITH LOCALE zh_CN
+2018-08-28 08:20:00.688 [http-nio-8081-exec-4] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-4][admin/setting][zh_CN][48585895][49] TEMPLATE "admin/setting" WITH LOCALE zh_CN PROCESSED IN 48585895 nanoseconds (approx. 49ms)
+2018-08-28 08:20:32.332 [http-nio-8081-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:32.333 [http-nio-8081-exec-5] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/attach, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:32.335 [http-nio-8081-exec-5] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/attach,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.AttachController.index,ARGS : [org.apache.catalina.connector.RequestFacade@a19374, 1, 12]
+2018-08-28 08:20:32.335 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:32.335 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79d623] was not registered for synchronization because synchronization is not active
+2018-08-28 08:20:32.335 [http-nio-8081-exec-5] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.7954545454545454
+2018-08-28 08:20:32.337 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:20:32.337 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:20:32.337 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==>  Preparing: SELECT count(0) FROM t_attach 
+2018-08-28 08:20:32.337 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:20:32.337 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - ==> Parameters: 
+2018-08-28 08:20:32.338 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:20:32.338 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample_COUNT - <==      Total: 1
+2018-08-28 08:20:32.339 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:20:32.339 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==>  Preparing: select id, fname, ftype, fkey, author_id, created from t_attach order by id desc LIMIT 12 
+2018-08-28 08:20:32.339 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:20:32.339 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - ==> Parameters: 
+2018-08-28 08:20:32.344 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 7
+2018-08-28 08:20:32.344 [http-nio-8081-exec-5] DEBUG com.my.blog.website.dao.AttachVoMapper.selectByExample - <==      Total: 7
+2018-08-28 08:20:32.344 [http-nio-8081-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79d623]
+2018-08-28 08:20:32.344 [http-nio-8081-exec-5] INFO  javax.sql.DataSource - RESPONSE : admin/attach
+2018-08-28 08:20:32.346 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] STARTING PROCESS OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:20:32.346 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "admin/attach" was correctly resolved as resource "classpath:/templates/admin/attach.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.348 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] Starting process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:20:32.349 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.352 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.372 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.374 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.375 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-5] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:32.376 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] Finished process on template "admin/attach" using mode "HTML5"
+2018-08-28 08:20:32.377 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-5] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/attach" WITH LOCALE zh_CN
+2018-08-28 08:20:32.377 [http-nio-8081-exec-5] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-5][admin/attach][zh_CN][31306138][31] TEMPLATE "admin/attach" WITH LOCALE zh_CN PROCESSED IN 31306138 nanoseconds (approx. 31ms)
+2018-08-28 08:20:34.848 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:34.848 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/category, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:34.848 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/category,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CategoryController.index,ARGS : [org.apache.catalina.connector.RequestFacade@19ac074]
+2018-08-28 08:20:34.849 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:34.849 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ef761] was not registered for synchronization because synchronization is not active
+2018-08-28 08:20:34.849 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:20:34.849 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:20:34.849 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:20:34.850 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:20:34.850 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: category(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:20:34.854 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 5
+2018-08-28 08:20:34.854 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 5
+2018-08-28 08:20:34.854 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5ef761]
+2018-08-28 08:20:34.855 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:34.855 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dba80] was not registered for synchronization because synchronization is not active
+2018-08-28 08:20:34.855 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:20:34.855 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:20:34.855 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==>  Preparing: select a.*, count(b.cid) as count from t_metas a left join `t_relationships` b on a.mid = b.mid where a.type = ? group by a.mid order by ? limit ? 
+2018-08-28 08:20:34.856 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:20:34.856 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - ==> Parameters: tag(String), count desc, a.mid desc(String), 9999(Integer)
+2018-08-28 08:20:34.864 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 9
+2018-08-28 08:20:34.864 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectFromSql - <==      Total: 9
+2018-08-28 08:20:34.864 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@dba80]
+2018-08-28 08:20:34.864 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - RESPONSE : admin/category
+2018-08-28 08:20:34.867 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] STARTING PROCESS OF TEMPLATE "admin/category" WITH LOCALE zh_CN
+2018-08-28 08:20:34.868 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/category" was correctly resolved as resource "classpath:/templates/admin/category.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:34.871 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Starting process on template "admin/category" using mode "HTML5"
+2018-08-28 08:20:34.872 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:34.877 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:34.895 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:34.896 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:34.901 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Finished process on template "admin/category" using mode "HTML5"
+2018-08-28 08:20:34.910 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/category" WITH LOCALE zh_CN
+2018-08-28 08:20:34.910 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-9][admin/category][zh_CN][42805845][43] TEMPLATE "admin/category" WITH LOCALE zh_CN PROCESSED IN 42805845 nanoseconds (approx. 43ms)
+2018-08-28 08:20:36.541 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:36.541 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/comments, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:36.542 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/comments,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.CommentController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@1b7dd05]
+2018-08-28 08:20:36.542 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:36.542 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@128f44f] was not registered for synchronization because synchronization is not active
+2018-08-28 08:20:36.543 [http-nio-8081-exec-9] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.8
+2018-08-28 08:20:36.545 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will not be managed by Spring
+2018-08-28 08:20:36.545 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2018-08-28 08:20:36.545 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_comments WHERE (author_id <> ?) 
+2018-08-28 08:20:36.546 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2018-08-28 08:20:36.546 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: 1(Integer)
+2018-08-28 08:20:36.547 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:20:36.547 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:20:36.547 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT 15 
+2018-08-28 08:20:36.547 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select coid, cid, created, author, author_id, owner_id, mail, url, ip, agent, type, status, parent , content from t_comments WHERE ( author_id <> ? ) order by coid desc LIMIT 15 
+2018-08-28 08:20:36.548 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer)
+2018-08-28 08:20:36.548 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - ==> Parameters: 1(Integer)
+2018-08-28 08:20:36.551 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:20:36.551 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.CommentVoMapper.selectByExampleWithBLOBs - <==      Total: 4
+2018-08-28 08:20:36.551 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@128f44f]
+2018-08-28 08:20:36.551 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - RESPONSE : admin/comment_list
+2018-08-28 08:20:36.553 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] STARTING PROCESS OF TEMPLATE "admin/comment_list" WITH LOCALE zh_CN
+2018-08-28 08:20:36.553 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/comment_list" was correctly resolved as resource "classpath:/templates/admin/comment_list.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.555 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Starting process on template "admin/comment_list" using mode "HTML5"
+2018-08-28 08:20:36.556 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.558 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.598 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.601 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.602 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:36.603 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Finished process on template "admin/comment_list" using mode "HTML5"
+2018-08-28 08:20:36.604 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/comment_list" WITH LOCALE zh_CN
+2018-08-28 08:20:36.604 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-9][admin/comment_list][zh_CN][51199806][51] TEMPLATE "admin/comment_list" WITH LOCALE zh_CN PROCESSED IN 51199806 nanoseconds (approx. 51ms)
+2018-08-28 08:20:38.160 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:38.160 [http-nio-8081-exec-6] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:38.161 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/article,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.ArticleController.index,ARGS : [1, 15, org.apache.catalina.connector.RequestFacade@1b7dd05]
+2018-08-28 08:20:38.161 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:38.161 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c916b2]
+2018-08-28 08:20:38.162 [http-nio-8081-exec-6] DEBUG SQL_CACHE - Cache Hit Ratio [SQL_CACHE]: 0.8043478260869565
+2018-08-28 08:20:38.163 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:20:38.163 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:20:38.163 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==>  Preparing: SELECT count(0) FROM t_contents WHERE (type = ?) 
+2018-08-28 08:20:38.163 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2018-08-28 08:20:38.163 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - ==> Parameters: post(String)
+2018-08-28 08:20:38.164 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:20:38.164 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs_COUNT - <==      Total: 1
+2018-08-28 08:20:38.165 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 15 
+2018-08-28 08:20:38.165 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==>  Preparing: select cid, title, slug, created, modified, author_id, type, status, tags, categories, hits, comments_num, allow_comment, allow_ping, allow_feed , content from t_contents WHERE ( type = ? ) order by created desc LIMIT 15 
+2018-08-28 08:20:38.165 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String)
+2018-08-28 08:20:38.165 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - ==> Parameters: post(String)
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 5
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG com.my.blog.website.dao.ContentVoMapper.selectByExampleWithBLOBs - <==      Total: 5
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c916b2]
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] INFO  javax.sql.DataSource - RESPONSE : admin/article_list
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c916b2]
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c916b2]
+2018-08-28 08:20:38.169 [http-nio-8081-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c916b2]
+2018-08-28 08:20:38.171 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] STARTING PROCESS OF TEMPLATE "admin/article_list" WITH LOCALE zh_CN
+2018-08-28 08:20:38.172 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/article_list" was correctly resolved as resource "classpath:/templates/admin/article_list.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.173 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Starting process on template "admin/article_list" using mode "HTML5"
+2018-08-28 08:20:38.173 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.175 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.190 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "comm/macros" was correctly resolved as resource "classpath:/templates/comm/macros.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.191 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.192 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-6] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:38.193 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] Finished process on template "admin/article_list" using mode "HTML5"
+2018-08-28 08:20:38.194 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-6] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/article_list" WITH LOCALE zh_CN
+2018-08-28 08:20:38.194 [http-nio-8081-exec-6] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-6][admin/article_list][zh_CN][22862047][23] TEMPLATE "admin/article_list" WITH LOCALE zh_CN PROCESSED IN 22862047 nanoseconds (approx. 23ms)
+2018-08-28 08:20:40.112 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - UserAgent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36
+2018-08-28 08:20:40.112 [http-nio-8081-exec-9] INFO  com.my.blog.website.interceptor.BaseInterceptor - 用户访问地址: /admin/article/publish, 来路地址: 0:0:0:0:0:0:0:1
+2018-08-28 08:20:40.114 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - URL : http://localhost:8081/admin/article/publish,IP : 0:0:0:0:0:0:0:1,CLASS_METHOD : com.my.blog.website.controller.admin.ArticleController.newArticle,ARGS : [org.apache.catalina.connector.RequestFacade@19ac074]
+2018-08-28 08:20:40.114 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2018-08-28 08:20:40.114 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Registering transaction synchronization for SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2823b]
+2018-08-28 08:20:40.116 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.transaction.SpringManagedTransaction - JDBC Connection [com.mysql.jdbc.JDBC4Connection@dfa525] will be managed by Spring
+2018-08-28 08:20:40.116 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2018-08-28 08:20:40.116 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==>  Preparing: select mid, name, slug, type, description, sort, parent from t_metas WHERE ( type = ? ) order by sort desc, mid desc 
+2018-08-28 08:20:40.116 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: category(String)
+2018-08-28 08:20:40.116 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - ==> Parameters: category(String)
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] DEBUG com.my.blog.website.dao.MetaVoMapper.selectByExample - <==      Total: 5
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Releasing transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2823b]
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] INFO  javax.sql.DataSource - RESPONSE : admin/article_edit
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization committing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2823b]
+2018-08-28 08:20:40.119 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization deregistering SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2823b]
+2018-08-28 08:20:40.120 [http-nio-8081-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Transaction synchronization closing SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1c2823b]
+2018-08-28 08:20:40.123 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] STARTING PROCESS OF TEMPLATE "admin/article_edit" WITH LOCALE zh_CN
+2018-08-28 08:20:40.150 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/article_edit" was correctly resolved as resource "classpath:/templates/admin/article_edit.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:40.153 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Starting process on template "admin/article_edit" using mode "HTML5"
+2018-08-28 08:20:40.154 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:40.156 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/header" was correctly resolved as resource "classpath:/templates/admin/header.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:40.188 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:40.189 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateRepository - [THYMELEAF][http-nio-8081-exec-9] Template "admin/footer" was correctly resolved as resource "classpath:/templates/admin/footer.html" in mode HTML5 with resource resolver "SPRING-RESOURCE"
+2018-08-28 08:20:40.191 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] Finished process on template "admin/article_edit" using mode "HTML5"
+2018-08-28 08:20:40.192 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine - [THYMELEAF][http-nio-8081-exec-9] FINISHED PROCESS AND OUTPUT OF TEMPLATE "admin/article_edit" WITH LOCALE zh_CN
+2018-08-28 08:20:40.192 [http-nio-8081-exec-9] DEBUG org.thymeleaf.TemplateEngine.TIMER - [THYMELEAF][http-nio-8081-exec-9][admin/article_edit][zh_CN][68686796][69] TEMPLATE "admin/article_edit" WITH LOCALE zh_CN PROCESSED IN 68686796 nanoseconds (approx. 69ms)
