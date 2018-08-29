@@ -5,17 +5,18 @@ body {
 	margin-top:30px;
 }
 
-/*.container {*/
-	/*width: 1240px;*/
-	/*padding:20px;*/
-	/*margin:50px auto 0 auto;*/
-/*}*/
+.containerView {
+	width: 1200px;
+	padding:0px;
+	margin:5px auto 0 auto;
+}
 
 .box {
 	width:260px;
 	height:195px;
-	margin:20px;
+	margin:12px;
 	float:left;
+	/*margin: 5px auto;*/
 	position: relative;
 }
 

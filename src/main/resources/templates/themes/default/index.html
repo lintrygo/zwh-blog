@@ -4,34 +4,12 @@
 <body>
 
 
-<div class="title">
-    <label>Effect:</label>
-    <select id="effects-select">
-        <option value="default">default</option>
-        <option value="simple">simple</option>
-        <option value="left">left</option>
-        <option value="up">up</option>
-        <option value="leftright">leftright</option>
-        <option value="updown">updown</option>
-        <option value="switchlr">switchlr</option>
-        <option value="switchud">switchud</option>
-        <option value="fliplr">fliplr</option>
-        <option value="flipud">flipud</option>
-        <option value="reduce">reduce</option>
-        <option value="360">360</option>
-    </select>
-    <div class="code">
-        <code>x: 6</code>
-        <code>y: 4</code>
-        <code>random: true</code>
-    </div>
-    <button type="button" class="start action">Play</button>
-    <button type="button" class="stop action">Stop</button>
-</div>
+<!--<div class="title">-->
 
-<div class="car slider-wrap" style="margin-top: 30px">
+<!--</div>-->
+
+<div class="car slider-wrap" style="margin-top: 10px">
     <div class="slider">
-        <p><strong>Pig ham:</strong> hock pork loin brisket pastrami frankfurter andouille.</p>
         <img th:src="@{/user/carousel/img/01.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
         <img th:src="@{/user/carousel/img/02.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
         <img th:src="@{/user/carousel/img/03.jpg}"/><p><strong>广州:</strong> 不辜负自己，不辜负此生.</p>
@@ -113,11 +91,11 @@
     <div class="post-lists">
         <div class="col-md-12">
         <div class="panel group-topic-list no-border">
-            <div class="panel-heading" style="padding:15px 15px;">
+            <div class="panel-heading"  style="padding:15px 15px;">
                 我的博文
                 <span class="pull-right" >
-                            <a class="btn btn-primary m-t-n4" href="">查看更多</a>
-                        </span>
+                    <a class="btn btn-primary m-t-n4" href="">查看更多</a>
+                </span>
             </div>
         </div>
         <div class="panel-body " style="padding:0px;">
@@ -145,9 +123,133 @@
         </div>
         </div>
     </div>
-    <div class="lists-navigator clearfix">
-        <div th:replace="comm/macros::pageNav(${articles},'←','→','page')"></div>
+    <!--<div class="lists-navigator clearfix">-->
+        <!--<div th:replace="comm/macros::pageNav(${articles},'←','→','page')"></div>-->
+    <!--</div>-->
+    <div class="col-md-12">
+        <div class="panel group-topic-list no-border">
+            <div class="panel-heading"  style="padding:15px 15px;">
+                图库
+                <span class="pull-right" >
+                    <a class="btn btn-primary m-t-n4" href="">查看更多</a>
+                </span>
+            </div>
+        </div>
+        <div class="panel-body" style="padding: 0px;">
+        <div class="containerView">
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        God in Creation<span class="name">Matt Scribner</span>
+                        <div class="row">92 likes - 1,410 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateRight" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/1.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/1516643-God-in-Creation" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Zephaniah 3:17<span class="name">Matt Scribner</span>
+                        <div class="row">119 likes - 1,826 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateUp" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/2.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/1120386-Zephaniah-3-17" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Rejoice Always<span class="name">Matt Scribner</span>
+                        <div class="row">135 likes - 1,296 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateLeft" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/3.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/854408-Rejoice-Always" target="_blank"></a>
+            </div>
+
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Colossians 1:16<span class="name">Matt Scribner</span>
+                        <div class="row">123 likes - 1,492 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateRight" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/4.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/907170-Colossians-1-16" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Be A Man!<span class="name">Matt Scribner</span>
+                        <div class="row">84 likes - 1,157 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateDown" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/5.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/789907-BE-A-MAN" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Philippians 4:13<span class="name">Matt Scribner</span>
+                        <div class="row">77 likes - 1,017 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateLeft" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/6.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/512363-Philippians-4-13" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Philippians 4:13<span class="name">Matt Scribner</span>
+                        <div class="row">77 likes - 1,017 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateLeft" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/2.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/512363-Philippians-4-13" target="_blank"></a>
+            </div>
+
+            <div class="box">
+                <div class="box-content">
+                    <div class="box-wrapper">
+                        Philippians 4:13<span class="name">Matt Scribner</span>
+                        <div class="row">77 likes - 1,017 views</div>
+                    </div>
+                </div>
+                <div class="box-overlay magictime" data-hover="rotateLeft" data-return="">
+                    <img th:src="@{/user/pictureEffect/img/4.jpg}" alt="" />
+                </div>
+                <a class="link" href="https://dribbble.com/shots/512363-Philippians-4-13" target="_blank"></a>
+            </div>
+
+
+        </div>
+        </div>
     </div>
+
+
+
 </div>
 </body>
 <div th:replace="themes/default/footer::footer"></div>
