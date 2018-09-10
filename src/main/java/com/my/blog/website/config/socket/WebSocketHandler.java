@@ -2,6 +2,7 @@ package com.my.blog.website.config.socket;
 
 
 import net.sf.json.JSONObject;
+import org.springframework.stereotype.Service;
 import org.springframework.web.socket.CloseStatus;
 import org.springframework.web.socket.TextMessage;
 import org.springframework.web.socket.WebSocketMessage;
@@ -12,6 +13,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
+@Service
 public class WebSocketHandler implements org.springframework.web.socket.WebSocketHandler{
     //在线用户列表
     private static final Map<String, WebSocketSession> users;
