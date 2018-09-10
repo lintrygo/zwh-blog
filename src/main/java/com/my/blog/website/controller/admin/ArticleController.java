@@ -95,6 +95,7 @@ public class ArticleController extends BaseController {
      * @param contents
      * @param request
      * @return
+     *
      */
     @PostMapping(value = "/publish")
     @ResponseBody
