@@ -176,6 +176,13 @@
             <classifier>jdk15</classifier>
         </dependency>
 
+        <!-- alibaba json-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.47</version>
+        </dependency>
+
     </dependencies>
 
     <!-- 普通的maven打包方式 -->
