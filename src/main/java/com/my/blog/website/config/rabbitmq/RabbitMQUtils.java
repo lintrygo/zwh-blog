@@ -12,26 +12,26 @@ import org.springframework.stereotype.Service;
 public class RabbitMQUtils {
     private static  final org.slf4j.Logger log = LoggerFactory.getLogger(RabbitMQUtils.class);
 
-//    @Autowired
-//    RabbitMQConfiguration rabbitMQConfiguration;
-//
-//    /**
-//     * 发送消息
-//     */
-//    public void sendMsg(String exchange){
-//        try {
-//            Connection connection = rabbitMQConfiguration.getConnection();
-//            Channel channel = connection.createChannel();
-//            channel.queueDeclare(exchange,true,false,false,null);
-//            for (int i = 0; i < 9; i++) {
-//                channel.basicPublish("", exchange, null, String.valueOf(i).getBytes());
-//            }
-////            channel.basicPublish("",exchange, null, SerializationUtils.serialize(Object));
-////            log.info("["+exchange+"] Sent '" + Object + "'");
-//            channel.close();
-//            connection.close();
-//        } catch (Exception e) {
-//            e.printStackTrace();
-//        }
-//    }
+    @Autowired
+    RabbitMQConfiguration rabbitMQConfiguration;
+
+    /**
+     * 发送消息
+     */
+    public void sendMsg(String exchange){
+        try {
+            Connection connection = rabbitMQConfiguration.getConnection();
+            Channel channel = connection.createChannel();
+            channel.queueDeclare(exchange,true,false,false,null);
+            for (int i = 0; i < 9; i++) {
+                channel.basicPublish("", exchange, null, String.valueOf(i).getBytes());
+            }
+//            channel.basicPublish("",exchange, null, SerializationUtils.serialize(Object));
+//            log.info("["+exchange+"] Sent '" + Object + "'");
+            channel.close();
+            connection.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }
