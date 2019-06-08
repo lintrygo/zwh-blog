@@ -1,6 +1,7 @@
 package com.my.blog.website;
 
 import com.alibaba.druid.pool.DruidDataSource;
+import com.ctrip.framework.apollo.spring.annotation.EnableApolloConfig;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -20,6 +21,7 @@ import javax.sql.DataSource;
 @MapperScan("com.my.blog.website.dao")
 @SpringBootApplication
 @EnableTransactionManagement
+@EnableApolloConfig
 public class CoreApplication extends SpringBootServletInitializer
 {
     @Override

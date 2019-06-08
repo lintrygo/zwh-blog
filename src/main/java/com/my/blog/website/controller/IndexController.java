@@ -1,6 +1,8 @@
 package com.my.blog.website.controller;
 
 import com.github.pagehelper.PageInfo;
+import com.my.blog.website.config.rabbitmq.RabbitMQConfiguration;
+import com.my.blog.website.config.rabbitmq.RabbitMQUtils;
 import com.my.blog.website.constant.WebConst;
 import com.my.blog.website.dto.ErrorCode;
 import com.my.blog.website.dto.MetaDto;
@@ -23,6 +25,8 @@ import com.my.blog.website.utils.IPKit;
 import org.apache.commons.lang3.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
@@ -42,7 +46,7 @@ import java.util.List;
  */
 @Controller
 public class IndexController extends BaseController {
-    private static final Logger LOGGER = LoggerFactory.getLogger(IndexController.class);
+    private static  final org.slf4j.Logger log = LoggerFactory.getLogger(RabbitMQUtils.class);
 
     @Resource
     private IContentService contentService;
@@ -56,6 +60,15 @@ public class IndexController extends BaseController {
     @Resource
     private ISiteService siteService;
 
+    @Value("${spring.rabbitmq.host}")
+    private String host;
+
+    @Autowired
+    private RabbitMQUtils rabbitMQUtils;
+
+    @Autowired
+    RabbitMQConfiguration rabbitMQConfiguration;
+
     /**
      * 首页
      *
@@ -63,7 +76,23 @@ public class IndexController extends BaseController {
      */
     @GetMapping(value = {"/", "index"})
     public String index(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
+        log.info("host:"+host);
         return this.index(request, 1, limit);
+    }
+
+    @GetMapping("/test")
+    public void test(){
+        rabbitMQUtils.sendMsg("tset");
+    }
+
+    @GetMapping("/test1")
+    public void test1(){
+        try{
+            rabbitMQConfiguration.connectionFactory();
+            //rabbitMQConfiguration.ttt();
+        }catch (Exception e){
+
+        }
     }
 
     /**
@@ -230,7 +259,7 @@ public class IndexController extends BaseController {
             if (e instanceof TipException) {
                 msg = e.getMessage();
             } else {
-                LOGGER.error(msg, e);
+                log.error(msg, e);
             }
             return RestResponseBo.fail(msg);
         }
