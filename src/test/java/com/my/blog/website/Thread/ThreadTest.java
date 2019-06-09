@@ -1,6 +1,6 @@
 package com.my.blog.website.Thread;
 
-import groovy.util.logging.Slf4j;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.slf4j.LoggerFactory;
 

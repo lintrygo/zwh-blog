@@ -16,7 +16,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.1.RELEASE</version>
+        <version>2.0.2.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -127,7 +127,7 @@
         <dependency>
             <groupId>com.github.pagehelper</groupId>
             <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.1.0</version>
+            <version>1.2.3</version>
         </dependency>
 
         <dependency>
@@ -182,7 +182,6 @@
             <artifactId>quartz</artifactId>
             <version>2.2.3</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-context-support</artifactId>
@@ -211,13 +210,43 @@
             <version>1.2.30</version>
         </dependency>
 
-
         <dependency>
             <groupId>com.ctrip.framework.apollo</groupId>
             <artifactId>apollo-client</artifactId>
             <version>1.1.0</version>
         </dependency>
+
+        <!--Spring Cloud Config 客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-config</artifactId>
+            <version>2.0.0.RELEASE</version>
+        </dependency>
+        <!--Spring Boot Actuator ,监控服务端变化-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!--添加eureka 客户端依赖-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <version>2.0.2.RELEASE</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-eureka-server</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
     </dependencies>
+
+
 
     <!-- 普通的maven打包方式 -->
     <build>
