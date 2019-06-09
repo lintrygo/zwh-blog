@@ -1,6 +1,7 @@
 package com.my.blog.website.controller;
 
 import com.github.pagehelper.PageInfo;
+import com.my.blog.website.config.rabbitmq.MqConfig;
 import com.my.blog.website.config.rabbitmq.RabbitMQConfiguration;
 import com.my.blog.website.config.rabbitmq.RabbitMQUtils;
 import com.my.blog.website.constant.WebConst;
@@ -8,6 +9,7 @@ import com.my.blog.website.dto.ErrorCode;
 import com.my.blog.website.dto.MetaDto;
 import com.my.blog.website.dto.Types;
 import com.my.blog.website.exception.TipException;
+import com.my.blog.website.interceptor.BaseInterceptor;
 import com.my.blog.website.modal.Bo.ArchiveBo;
 import com.my.blog.website.modal.Bo.RestResponseBo;
 import com.my.blog.website.modal.Vo.CommentVo;
@@ -46,7 +48,7 @@ import java.util.List;
  */
 @Controller
 public class IndexController extends BaseController {
-    private static  final org.slf4j.Logger log = LoggerFactory.getLogger(RabbitMQUtils.class);
+    private static final Logger LOGGE = LoggerFactory.getLogger(IndexController.class);
 
     @Resource
     private IContentService contentService;
@@ -69,6 +71,10 @@ public class IndexController extends BaseController {
     @Autowired
     RabbitMQConfiguration rabbitMQConfiguration;
 
+    @Autowired
+    MqConfig mqConfig;
+
+
     /**
      * 首页
      *
@@ -76,7 +82,7 @@ public class IndexController extends BaseController {
      */
     @GetMapping(value = {"/", "index"})
     public String index(HttpServletRequest request, @RequestParam(value = "limit", defaultValue = "12") int limit) {
-        log.info("host:"+host);
+        LOGGE.info("host:"+host);
         return this.index(request, 1, limit);
     }
 
@@ -93,6 +99,12 @@ public class IndexController extends BaseController {
         }catch (Exception e){
 
         }
+    }
+
+    @GetMapping("/a")
+    public void testddd(){
+        LOGGE.info("test Configuration:"+rabbitMQConfiguration.getHost());
+        LOGGE.info("test pro:"+mqConfig.getHost());
     }
 
     /**
@@ -259,7 +271,7 @@ public class IndexController extends BaseController {
             if (e instanceof TipException) {
                 msg = e.getMessage();
             } else {
-                log.error(msg, e);
+                LOGGE.error(msg, e);
             }
             return RestResponseBo.fail(msg);
         }
