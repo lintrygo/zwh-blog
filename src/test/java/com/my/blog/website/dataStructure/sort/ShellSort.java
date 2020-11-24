@@ -9,7 +9,7 @@ public class ShellSort {
         int[] array = {100,4,23,56,78,99,123};
         sortA(array);
         System.out.println(Arrays.toString(array));
-        System.out.println("v22");
+        System.out.println("v22test");
     }
 
     /**
