@@ -11,6 +11,7 @@ public class ClassInitTest {
 
     public void test(){
         "d".intern();
+        String A = "dddddddddddd";
     }
 
 }
