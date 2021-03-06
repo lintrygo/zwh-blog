@@ -10,7 +10,7 @@ public class ClassInitTest {
     private static int a = 1;
 
     public void test(){
-        "C".intern();
+        "d".intern();
     }
 
 }
