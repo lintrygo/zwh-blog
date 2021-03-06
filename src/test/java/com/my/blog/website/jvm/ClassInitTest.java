@@ -10,8 +10,8 @@ public class ClassInitTest {
     private static int a = 1;
 
     public void test(){
-        String a = "1112222kkk";
-        String b = "1112222kkk";
+        String a123 = "1112222kkk";
+        String b234 = "1112222kkk";
 
     }
 
