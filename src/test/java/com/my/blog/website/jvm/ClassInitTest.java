@@ -10,7 +10,8 @@ public class ClassInitTest {
     private static int a = 1;
 
     public void test(){
-        "d".intern();
+        String a = "1112222";
+
     }
 
 }
