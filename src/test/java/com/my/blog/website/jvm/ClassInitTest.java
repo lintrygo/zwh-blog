@@ -10,8 +10,9 @@ public class ClassInitTest {
     private static int a = 1;
 
     public void test(){
-        String a = "1112222kkk";
-        String b = "1112222kkk";
+        String td123lll= "1sss112222kkk";
+        String td234mmm = "11sss12222kkk";
+        String mmmmtd234mmm = "11sss12222kkk";
 
     }
 
