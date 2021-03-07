@@ -12,6 +12,7 @@ public class ClassInitTest {
     public void test(){
         String td123lll= "1sss112222kkk";
         String td234mmm = "11sss12222kkk";
+        String mmmmtd234mmm = "11sss12222kkk";
 
     }
 
